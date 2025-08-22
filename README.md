@@ -1,21 +1,31 @@
-# API Testing — JSONPlaceholder
+# API Testing – JSONPlaceholder
 
-> **Stack:** Postman + Newman (CLI).  
-> **Objetivo:** Probar endpoints REST (GET/POST/PUT/DELETE) con aserciones y reportes.
+## 📖 Descripción
+Pruebas de **API REST** usando **Postman + Newman** sobre el servicio público JSONPlaceholder.  
+Validación de endpoints GET, POST, PUT y DELETE con aserciones.
 
-## Requisitos
-- Node.js 18+
-- Postman (opcional para editar)
-- `npm i` para instalar newman y reporter HTML
+---
 
-## Ejecutar
+## 📂 Contenido
+- **jsonplaceholder.postman_collection.json** → colección con requests y tests.
+- **jsonplaceholder.postman_environment.json** → variables de entorno.
+- **package.json** → script de ejecución con Newman.
+
+---
+
+## 🛠️ Herramientas
+- Postman
+- Newman (CLI)
+- Node.js
+
+---
+
+## 🚀 Cómo ejecutar
 ```bash
+# Instalar dependencias
 npm install
-npm run test
-# Reporte HTML: ./newman/report.html
-```
 
-## Estructura
-- `jsonplaceholder.postman_collection.json`
-- `jsonplaceholder.postman_environment.json`
-- `package.json` (scripts de newman)
+# Ejecutar pruebas y generar reporte
+npm run test
+
+# Reporte HTML en ./newman/report.html
